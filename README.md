@@ -4,7 +4,7 @@ This project is a deep learning-based neural machine translation (NMT) system th
 
 **Live Demo:** [https://hindi-english-translator-tensorflow-44wd4tbfyf5xri6bxum9x.streamlit.app](https://hindi-english-translator-tensorflow-44wd4ttbfyf5xn6bxum9xx.streamlit.app/)
 
-![Screenshot of the running Streamlit App](https://i.imgur.com/wY2Y47S.png)
+![Screenshot of the running Streamlit App](https://github.com/user-attachments/assets/b618d6d5-839f-4f51-839b-67e806905fb3)
 
 ---
 
