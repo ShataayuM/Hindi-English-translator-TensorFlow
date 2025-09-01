@@ -28,7 +28,7 @@ The translation model uses a classic **Encoder-Decoder architecture** with a **B
 ## 📊 Dataset
 The model was trained on the **IIT Bombay English-Hindi Parallel Corpus**, which contains a large set of sentence pairs. The data was sourced from Kaggle.
 
-- **Dataset Link**: [IIT Bombay English-Hindi Corpus](https://www.kaggle.com/datasets/dhruvagg/hindi-english-parallel-corpus)
+- **Dataset Link**: [IIT Bombay English-Hindi Corpus](https://www.kaggle.com/datasets/vaibhavkumar11/hindi-english-parallel-corpus)
 - A subset of 50,000 sentence pairs was used for this training session.
 
 ---
