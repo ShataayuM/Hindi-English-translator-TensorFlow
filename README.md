@@ -2,7 +2,7 @@
 
 This project is a deep learning-based neural machine translation (NMT) system that translates sentences from Hindi to English. The model is built from scratch using TensorFlow and Keras, and the interactive web interface is powered by Streamlit.
 
-**Live Demo:** [https://hindi-english-translator-tensorflow-44wd4tbfyf5xri6bxum9x.streamlit.app](https://hindi-english-translator-tensorflow-44wd4tbfyf5xri6bxum9x.streamlit.app)
+**Live Demo:** [https://hindi-english-translator-tensorflow-44wd4tbfyf5xri6bxum9x.streamlit.app](https://hindi-english-translator-tensorflow-44wd4ttbfyf5xn6bxum9xx.streamlit.app/)
 
 ![Screenshot of the running Streamlit App](https://i.imgur.com/wY2Y47S.png)
 
