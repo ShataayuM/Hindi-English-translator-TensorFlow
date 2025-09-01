@@ -32,7 +32,20 @@ def load_model():
     encoder = Encoder(len(hi_vocab), embedding_dim, units, BATCH_SIZE)
     decoder = Decoder(len(en_vocab), embedding_dim, units, BATCH_SIZE)
     
-    # Load the trained weights
+    # --- THIS IS THE FIX ---
+    # Build the models by calling them with dummy inputs. This forces Keras to
+    # create all the layer weights, making them ready for loading.
+    
+    # Build the encoder
+    dummy_input = tf.zeros((BATCH_SIZE, 1), dtype=tf.int64)
+    initial_hidden_state = encoder.initialize_hidden_state()
+    _, _ = encoder(dummy_input, initial_hidden_state)
+    
+    # Build the decoder
+    dummy_enc_output = tf.zeros((BATCH_SIZE, 1, units))
+    _ , _, _ = decoder(dummy_input, initial_hidden_state, dummy_enc_output)
+    
+    # Now that the models are "built", we can load the weights.
     encoder.load_weights('encoder.weights.h5')
     decoder.load_weights('decoder.weights.h5')
     
