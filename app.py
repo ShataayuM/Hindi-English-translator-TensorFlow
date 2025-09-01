@@ -14,9 +14,9 @@ def load_model():
     embedding_dim = 256
     
     # Load vocabularies
-    with open('vocabs/hi_vec_vocab.json', 'r') as f:
+    with open('hi_vec_vocab.json', 'r') as f:
         hi_vocab = json.load(f)
-    with open('vocabs/en_vec_vocab.json', 'r') as f:
+    with open('en_vec_vocab.json', 'r') as f:
         en_vocab = json.load(f)
 
     # Create and configure vectorization layers
@@ -33,8 +33,8 @@ def load_model():
     decoder = Decoder(len(en_vocab), embedding_dim, units, BATCH_SIZE)
     
     # Load the trained weights
-    encoder.load_weights('weights/encoder.weights.h5')
-    decoder.load_weights('weights/decoder.weights.h5')
+    encoder.load_weights('encoder.weights.h5')
+    decoder.load_weights('decoder.weights.h5')
     
     return encoder, decoder, hi_vec, en_vec
 
