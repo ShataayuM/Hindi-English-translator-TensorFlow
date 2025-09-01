@@ -57,7 +57,6 @@ def translate(hindi_sentence, encoder, decoder, hi_vec, en_vec):
     
     hindi_sentence = preprocess_sentence(hindi_sentence)
     inputs = hi_vec([hindi_sentence])
-    inputs = inputs.to_tensor()
 
     hidden = [tf.zeros((1, units)), tf.zeros((1, units))]
     enc_out, enc_hidden = encoder(inputs, hidden)
